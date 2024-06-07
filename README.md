@@ -5,3 +5,37 @@ Legacy Boot เป็นการ Boot ที่ใช้ Firmware ของ Bio
 UEFI  เป็นการ Boot อีกเเบบนึงคือจะมี interface ไว้สำหรับในการตั้งค่า Bios สามารถเก็บข้อมูลขนาดใหญ่ได้ ใน BIOS ปกติใช้จะแป้นพิมพ์เพื่อเลือกเป็นตัวเลือก เเต่ UEFI อนุญาตให้ควบคุม Interface โดยใช้เมาส์ นอกจากนี้ UEFI ยังเป็นการ Boot ที่ปลอดภัย
 # ข้อเเตกต่างที่เห็นได้ชัดก็คือ
 UEFI เป็นการ Boot คอมพิวเตอร์ที่ให้ความสามารถขั้นสูงกว่า BIOS Legacy Boot เป็นการ Boot คอมพิวเตอร์โดยใช้เฟิร์มแวร์ BIOS และมีความปลอดภัยสูงกว่า Legacy Boot แถม Interface ยังใช้งานง่ายกว่าอีกด้วย
+
+# Legacy และ UEFI ต่างกันอย่างไร ???
+
+ 
+
+   - UEFI คือ การบูตเครื่อง PC Bios แบบใหม่
+
+   - UEFI คือ Bios ที่เป็นรูปแบบภาพกราฟิก (ใหม่)
+
+   - Legacy คือ Bios ที่เป็นรูปแบบ Command (เก่า)
+
+   - UEFI เป็นการ Boot HHD แบบใหม่ GPT (GUID Partition Table)
+
+   - Legacy เป็นการ Boot HHD แบบเก่า MBR (Master Boot Record)
+
+   - ฮาร์ดดิสก์ UEFI ต้องสร้าง Format เป็นแบบ GPT
+
+   - ฮาร์ดดิสก์ Lagacy ต้องสร้าง Format เป็นแบบ MBR
+
+   - Legacy ที่เป็น MRB รองรับ HHD สูงสุดไม่เกิน 2TB
+
+   - UEFI ที่เป็น GPT รองรับ HHD สูงสุด 256TB (อย่างเยอะ)
+
+   - UEFI ที่เป็น GPT ทำ Primary Partition ได้สูงสุดถึง 128 ตัว
+
+   - UEFI เร็วกว่า Legacy บูตไวกว่า Legacy 10 วินาที
+
+   - UEFI มีข้อดี คือใช้งานทะลุขีดจำกัดของ HDD
+
+   - UEFI นิยมใช้กับ Tablet  win8 หรือโน๊ตบุคเครื่องบางๆ เปิดปุบติดปั๊บ
+
+   - ฮาร์ดดิสก์ ชนิด ssd บางรุ่น ต้องลง UEFI ถึงจะทำงานเร็ว 
+
+   - Driver บางรุ่น รองรับ UEFI ถ้าไม่มี UEFI วิ่งได้ไม่เต็ม Speed
